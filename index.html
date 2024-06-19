@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/styles.css">
+<title>PrestaYa</title>
+</head>
+<body>
+<div class="titulo">
+    <h1>Bienvenido/a somos PrestaYa, tu financiera de confianza</h1>
+</div>
+<div class="formulario">
+<form>
+    <h2 class="h2-superior">Solicitar prestamo</h2>
+    <label for="monto">Ingrese el monto que desea adquirir:</label>
+    <input type="number" id="monto" placeholder="Ingrese el monto" required><br><br>
+    
+    <label for="intereses">intereses anuales (%):</label>
+    <input type="number" id="intereses" placeholder="Ingrese los intereses" required><br><br>
+    
+    <label for="plazo">Plazo a pagar prestamo (en meses):</label>
+    <input type="number" id="plazo" placeholder="Ingrese el plazo" required><br><br>
+    
+    <button type="button" id="simularBtn">Simular préstamo</button>
+    <h2 class="resultados">Resultados:</h2>
+<p>La cuota mensual será de: <span id="cuotaMensual"></span></p>
+<p>El monto total a devolver será: <span id="totalAPagar"></span></p>
+</form>
+</div>
+
+
+
+<script src="prestamos.js"></script>
+</body>
+</html>
+
